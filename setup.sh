@@ -248,3 +248,7 @@ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.
 sudo apt-get update
 sudo apt-get install trivy
 echo -e "${GREEN}Trivy installed!${NC}"
+
+# install timeshift to handle backups
+sudo apt install timeshift
+echo -e "${GREEN}Timeshift installed!${NC}"

@@ -258,3 +258,21 @@ echo -e "${GREEN}Trivy installed!${NC}"
 # install timeshift to handle backups
 sudo apt install timeshift
 echo -e "${GREEN}Timeshift installed!${NC}"
+
+# install asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+echo ". $HOME/.asdf/asdf.sh" >>~/.bashrc
+echo ". $HOME/.asdf/completions/asdf.bash" >>~/.bashrc
+source ~/.bashrc
+echo -e "${GREEN}Asdf installed!${NC}"
+
+# install asdf plugins
+asdf plugin add python
+
+# install python
+sudo apt update; sudo apt install -y build-essential libssl-dev zlib1g-dev \
+    libbz2-dev libreadline-dev libsqlite3-dev curl git \
+    libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+asdf install python 3.12.4
+asdf global python 3.12.4
+echo -e "${GREEN}Python installed!${NC}"

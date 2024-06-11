@@ -33,11 +33,17 @@ sudo apt-get install -y net-tools # ifconfig
 sudo apt install icdiff           # diff tool
 echo -e "${GREEN}Basic tools installed!${NC}"
 
+# install gitk
+sudo apt-get install -y gitk
+echo -e "${GREEN}Gitk installed!${NC}"
+
 # install ipcalc (help in subnetting)
 sudo apt-get install -y ipcalc
+echo -e "${GREEN}IpCalc installed!${NC}"
 
 # install startup disk creator
 sudo apt-get install -y usb-creator-gtk
+echo -e "${GREEN}Startup disk creator installed!${NC}"
 
 # install vscode
 if [ ! -d "/usr/share/code" ]; then

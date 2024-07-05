@@ -17,3 +17,16 @@ unzip awscliv2.zip
 sudo ./aws/install
 rm -rf awscliv2.zip aws
 echo -e "${GREEN}AWS CLI installed!${NC}"
+
+# install gh cli
+curl -sS https://webi.sh/gh | sh
+echo -e "${GREEN}GitHub CLI installed!${NC}"
+
+gh auth login
+echo -e "${GREEN}GitHub CLI authenticated!${NC}"
+
+# clone all repos in the qomodo organization
+cd ~/repos/
+gh repo list qomodome --limit 500 | while read -r repo _; do
+    gh repo clone "$repo" "$repo"
+done

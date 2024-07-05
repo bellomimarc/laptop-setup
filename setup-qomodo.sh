@@ -30,3 +30,6 @@ cd ~/repos/
 gh repo list qomodome --limit 500 | while read -r repo _; do
     gh repo clone "$repo" "$repo"
 done
+
+# install python 3.11
+asdf install python 3.11.7

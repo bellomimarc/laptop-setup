@@ -286,3 +286,7 @@ curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 	&& sudo apt update \
 	&& sudo apt install ngrok
 echo -e "${GREEN}Ngrok installed!${NC}"
+
+# install dotenvx
+curl -fsS https://dotenvx.sh | sudo sh
+echo -e "${GREEN}Dotenvx installed!${NC}"

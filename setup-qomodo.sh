@@ -33,3 +33,7 @@ done
 
 # install python 3.11
 asdf install python 3.11.7
+
+# install yarn
+npm install --global yarn
+echo -e "${GREEN}Yarn installed!${NC}"

@@ -1,0 +1,2 @@
+alias db-prod="ssh -N -v -i ~/.ssh/qomodo_infra -L 38208:prod-main.cjoudcn23qt1.eu-south-1.rds.amazonaws.com:5432 ec2-user@15.160.208.12"
+alias db-dev="ssh -N -v -i ~/.ssh/qomodo_infra -L 38207:dev-main.cjoudcn23qt1.eu-south-1.rds.amazonaws.com:5432 ec2-user@15.160.176.26"
